@@ -14,7 +14,7 @@ function perimetroCuadrado(lado){
     return lado * 4;
 }
 
-perimetroCuadrado();
+
 
 //console.log("El perimetro del cuadrado es: " + perimetro + "" + "cm");
 
@@ -28,7 +28,7 @@ function areaCuadrado(lado){
     return lado * lado;
 }
 
-areaCuadrado();
+
 
 console.groupEnd();
 
@@ -92,5 +92,29 @@ const areaCir =(ratio, PI)=> (ratio * ratio) * PI;
 
 
 console.groupEnd();
+
+
+// funciones para interactuar con el HTML
+
+function calcularAreaCuadrado() {
+    const input= document.getElementById("InputCuadrado");
+
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+
+    alert(area);
+
+}
+
+function calcularPerimetroCuadrado() {
+    const input= document.getElementById("InputCuadrado");
+
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+
+    alert(perimetro);
+}
 
 
