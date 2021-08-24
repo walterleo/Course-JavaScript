@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Js Geometry</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
@@ -12,23 +13,31 @@
         <p>Taller practico de Js</p>
 
     </header>
+    <main>
     <section>
         <h2>Calcula el area y perimetro de un cuadrado</h2>
         <form>
+        <section class="label">
             <label>
-                Escribe cunaro mide cada lado de tu cuadrado:
+                Escribe cuando mide cada lado de tu cuadrado:
             </label>
-            <input id="InputCuadrado" type="number" /> 
+            <input id="InputCuadrado" type="number" />
+            <input id="InputTriangulo" type="number" />
+        </section> 
             <div>
+         <section class="main-buttons">
             <button type="button" onclick="calcularAreaCuadrado()">
                 Calcular el area
             </button>
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular el perimetro
+            
+            <button type="button" onclick="alturaTrianguloIsoceles()">
+                Calcular la altura
             </button>
+        </section>
         </div>
         </form>
     </section>
+</main>
 
     <script src="./figuras.js"></script>
     

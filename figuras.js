@@ -117,4 +117,37 @@ function calcularPerimetroCuadrado() {
     alert(perimetro);
 }
 
+/// calcular la altura de un triangulo isoceles
 
+function baseTrianguloIsoceles(base) { 
+    
+   return (base * base)/4;
+
+}
+
+
+function ladosTrianguloIsoceles (lado) { 
+    
+    return (lado * lado);
+
+}
+
+function alturaTrianguloIsoceles () {
+
+   
+
+    const inputC= document.getElementById("InputCuadrado");
+
+    const inputD= document.getElementById("InputTriangulo");
+
+    const valueUno = inputC.value;
+    
+    const valueDos = inputD.value;
+
+    const alturaIso = Math.sqrt(ladosTrianguloIsoceles(valueUno) - baseTrianguloIsoceles(valueDos));
+
+    const result = alturaIso.toPrecision(1);
+    alert(result);
+
+
+}
