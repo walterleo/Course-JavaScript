@@ -12,3 +12,9 @@
 - Implementarlas en JS
 - Crear funciones
 - Js linked con HTML
+
+## Taller Tres: Percentages and discounts
+- Definir las formulas
+- Implementarlas formulas en JS
+- Crear funciones
+- Js integrarlo con HTML
